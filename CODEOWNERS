@@ -1,40 +1,35 @@
-# CODEOWNERS — sycren-hq
-# Defines who must review changes to specific files or directories.
-# Last reviewer in a matching pattern takes precedence.
-# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
-
 # ─── Default: founders approve everything ────────────────────────────────────
-*                               @sycren-hq/founders
+*                               @sycren-org/founders
 
 # ─── Infrastructure & DevOps ─────────────────────────────────────────────────
-/infra/                         @sycren-hq/founders @sycren-hq/cloud-infra
-docker-compose*.yml             @sycren-hq/cloud-infra
-Dockerfile                      @sycren-hq/cloud-infra
-.github/workflows/              @sycren-hq/founders @sycren-hq/cloud-infra
+/infra/                         @sycren-org/founders @sycren-org/cloud-infra
+docker-compose*.yml             @sycren-org/cloud-infra
+Dockerfile                      @sycren-org/cloud-infra
+.github/workflows/              @sycren-org/founders @sycren-org/cloud-infra
 
 # ─── Security-sensitive files ─────────────────────────────────────────────────
-/security/                      @sycren-hq/founders @sycren-hq/security
-*.env.example                   @sycren-hq/founders
-*secrets*                       @sycren-hq/founders
+/security/                      @sycren-org/founders @sycren-org/security
+*.env.example                   @sycren-org/founders
+*secrets*                       @sycren-org/founders
 
 # ─── Frontend ─────────────────────────────────────────────────────────────────
-/src/components/                @sycren-hq/engineering @sycren-hq/product-design
-/src/pages/                     @sycren-hq/engineering @sycren-hq/product-design
-/src/styles/                    @sycren-hq/product-design
+/src/components/                @sycren-org/engineering @sycren-org/product-design
+/src/pages/                     @sycren-org/engineering @sycren-org/product-design
+/src/styles/                    @sycren-org/product-design
 
 # ─── Backend & API ────────────────────────────────────────────────────────────
-/src/api/                       @sycren-hq/engineering
-/src/services/                  @sycren-hq/engineering
+/src/api/                       @sycren-org/engineering
+/src/services/                  @sycren-org/engineering
 
 # ─── Database schemas & migrations ───────────────────────────────────────────
-/prisma/                        @sycren-hq/founders @sycren-hq/engineering
-/migrations/                    @sycren-hq/founders @sycren-hq/engineering
+/prisma/                        @sycren-org/founders @sycren-org/engineering
+/migrations/                    @sycren-org/founders @sycren-org/engineering
 
 # ─── Design system ────────────────────────────────────────────────────────────
-/design-system/                 @sycren-hq/product-design
+/design-system/                 @sycren-org/product-design
 
 # ─── Public documentation ─────────────────────────────────────────────────────
-/docs/                          @sycren-hq/product-design @sycren-hq/readonly
+/docs/                          @sycren-org/product-design @sycren-hq/readonly
 
 # ─── Org-level config (.github repo) ─────────────────────────────────────────
-/.github/                       @sycren-hq/founders
+/.github/                       @sycren-org/founders
