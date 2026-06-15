@@ -1,0 +1,40 @@
+# CODEOWNERS — sycren-hq
+# Defines who must review changes to specific files or directories.
+# Last reviewer in a matching pattern takes precedence.
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# ─── Default: founders approve everything ────────────────────────────────────
+*                               @sycren-hq/founders
+
+# ─── Infrastructure & DevOps ─────────────────────────────────────────────────
+/infra/                         @sycren-hq/founders @sycren-hq/cloud-infra
+docker-compose*.yml             @sycren-hq/cloud-infra
+Dockerfile                      @sycren-hq/cloud-infra
+.github/workflows/              @sycren-hq/founders @sycren-hq/cloud-infra
+
+# ─── Security-sensitive files ─────────────────────────────────────────────────
+/security/                      @sycren-hq/founders @sycren-hq/security
+*.env.example                   @sycren-hq/founders
+*secrets*                       @sycren-hq/founders
+
+# ─── Frontend ─────────────────────────────────────────────────────────────────
+/src/components/                @sycren-hq/engineering @sycren-hq/product-design
+/src/pages/                     @sycren-hq/engineering @sycren-hq/product-design
+/src/styles/                    @sycren-hq/product-design
+
+# ─── Backend & API ────────────────────────────────────────────────────────────
+/src/api/                       @sycren-hq/engineering
+/src/services/                  @sycren-hq/engineering
+
+# ─── Database schemas & migrations ───────────────────────────────────────────
+/prisma/                        @sycren-hq/founders @sycren-hq/engineering
+/migrations/                    @sycren-hq/founders @sycren-hq/engineering
+
+# ─── Design system ────────────────────────────────────────────────────────────
+/design-system/                 @sycren-hq/product-design
+
+# ─── Public documentation ─────────────────────────────────────────────────────
+/docs/                          @sycren-hq/product-design @sycren-hq/readonly
+
+# ─── Org-level config (.github repo) ─────────────────────────────────────────
+/.github/                       @sycren-hq/founders
