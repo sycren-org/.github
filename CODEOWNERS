@@ -29,7 +29,7 @@ Dockerfile                      @sycren-org/cloud-infra
 /design-system/                 @sycren-org/product-design
 
 # ─── Public documentation ─────────────────────────────────────────────────────
-/docs/                          @sycren-org/product-design @sycren-hq/readonly
+/docs/                          @sycren-org/product-design @sycren-org/readonly
 
 # ─── Org-level config (.github repo) ─────────────────────────────────────────
 /.github/                       @sycren-org/founders
