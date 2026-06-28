@@ -35,19 +35,6 @@ All services converge in a single dashboard at **[app.sycren.com](https://app.sy
 
 ---
 
-## Repositories
-
-| Repo | Description |
-|---|---|
-| [`sycren-app`](https://github.com/sycren-hq/sycren-app) | Unified hub — SSO, dashboard, billing |
-| [`sycren-studio`](https://github.com/sycren-hq/sycren-studio) | Studios platform — projects, quotes, client portal |
-| [`sycren-cloud`](https://github.com/sycren-hq/sycren-cloud) | Cloud panel — VPS, deploy, monitoring |
-| [`sycren-domains`](https://github.com/sycren-hq/sycren-domains) | Domains — registrar, DNS, renewals |
-| [`sycren-security`](https://github.com/sycren-hq/sycren-security) | Security — WAF, alerting, log viewer |
-| [`sycren-docs`](https://github.com/sycren-hq/sycren-docs) | Public documentation |
-
----
-
 <p align="center">
   <sub>© 2026 Sycren · All rights reserved · <a href="https://sycren.com">sycren.com</a></sub>
 </p>
